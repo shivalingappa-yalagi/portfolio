@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-
+ <!-- ===========================
+    01. GLOBAL STYLES
+    ============================ -->
 <head>
 
     <meta charset="UTF-8">
@@ -16,7 +18,7 @@
 <body>
 
     <!-- ===========================
-         NAVIGATION
+    02. NAVIGATION
     ============================ -->
 
     <nav>
@@ -44,7 +46,7 @@
     <main>
 
         <!-- ===========================
-     HERO SECTION
+03. HERO SECTION
 =========================== -->
 
 <section id="home" class="hero">
@@ -96,7 +98,7 @@
    
 </section>
 <!-- ===========================
-     STATISTICS SECTION
+04. STATISTICS SECTION
 =========================== -->
 
 <section id="statistics" class="statistics">
@@ -148,7 +150,7 @@
 </section>
       
       <!-- ==========================================
-        ABOUT SECTION
+05. ABOUT SECTION
 ========================================== -->
 
 <section id="about" class="about">
@@ -277,7 +279,7 @@
 
 </section>
        <!-- ===========================
-     SKILLS SECTION
+06. SKILLS SECTION
 =========================== -->
 <section id="skills" class="skills">
 
@@ -339,7 +341,7 @@
 
 </section>
 <!--=========================
-    EXPERIENCE SECTION
+07. EXPERIENCE SECTION
 ==========================-->
 
 <section id="experience" class="experience">
@@ -635,7 +637,7 @@
 </section>
 
        <!-- ===========================
-     PROJECTS SECTION
+08. PROJECTS SECTION
 =========================== -->
 
 <section id="projects" class="projects">
@@ -792,114 +794,86 @@
 </section>
 
 <!-- ==========================================
-     CONTACT SECTION
+09. CONTACT SECTION
 ========================================== -->
 <section id="contact" class="contact">
 
-    <!-- SECTION TITLE -->
-    <div class="section-title">
-        <h2>Contact</h2>
-    </div>
-
     <div class="contact-overlay">
 
-        <div class="contact-header">
+        
+        <!-- Contact Details -->
+        <div class="contact-details-horizontal">
 
-            <p>
-                Have a project, job opportunity, or collaboration in mind?
-                I'd love to hear from you.
-            </p>
+            <div class="contact-item">
+                <div class="icon">
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <a href="mailto:yalagishivalingappa@gmail.com">
+                    yalagishivalingappa@gmail.com
+                </a>
+            </div>
+
+            <div class="contact-item">
+                <div class="icon">
+                    <i class="fab fa-whatsapp"></i>
+                </div>
+                <a href="https://wa.me/919844003648" target="_blank">
+                    +91 98440 03648
+                </a>
+            </div>
+
+            <div class="contact-item">
+                <div class="icon">
+                    <i class="fab fa-linkedin"></i>
+                </div>
+                <a href="https://www.linkedin.com/in/shiva-yalagi-da/" target="_blank">
+                    linkedin.com/in/shiva-yalagi-da
+                </a>
+            </div>
+
+            <div class="contact-item">
+                <div class="icon">
+                    <i class="fab fa-instagram"></i>
+                </div>
+                <a href="https://www.instagram.com/shiva_data.analyst/" target="_blank">
+                    @shiva_data.analyst
+                </a>
+            </div>
 
         </div>
 
-        <div class="contact-wrapper">
-
-            <!-- CONTACT DETAILS -->
-
-            <div class="contact-details">
-
-                <h3>Contact Info</h3>
-
-                <div class="contact-item">
-
-                    <div class="icon">
-                        <i class="fas fa-envelope"></i>
-                    </div>
-
-                    <div>
-                        <a href="mailto:yalagishivalingappa@gmail.com">
-                            yalagishivalingappa@gmail.com
-                        </a>
-                    </div>
-
-                </div>
-
-                <div class="contact-item">
-
-                    <div class="icon">
-                        <i class="fab fa-whatsapp"></i>
-                    </div>
-
-                    <div>
-                        <a href="https://wa.me/919844003846" target="_blank">
-                            +91 98440 03846
-                        </a>
-                    </div>
-
-                </div>
-
-                <div class="contact-item">
-
-                    <div class="icon">
-                        <i class="fab fa-linkedin"></i>
-                    </div>
-
-                    <div>
-                        <a href="https://www.linkedin.com/in/shiva-yalagi-da/" target="_blank">
-                            linkedin.com/in/shiva-yalagi-da
-                        </a>
-                    </div>
-
-                </div>
-
-                <div class="contact-item">
-
-                    <div class="icon">
-                        <i class="fab fa-instagram"></i>
-                    </div>
-
-                    <div>
-                        <a href="https://www.instagram.com/shiva_data.analyst/" target="_blank">
-                            @shiva_data.analyst
-                        </a>
-                    </div>
-
-                </div>
-
-            </div>
-
-            <!-- CONTACT FORM -->
+        <!-- Form aligned to bottom-right -->
+        <div class="contact-form-wrapper">
 
             <div class="contact-form">
 
-                <h3>Send a Message</h3>
+                <h3>Have a query ? Send a Message</h3>
 
-                <form action="https://formsubmit.co/yalagishivalingappa@gmail.com" method="POST">
+                <form id="contactForm"></form>
 
-                    <input type="hidden" name="_captcha" value="false">
-                    <input type="hidden" name="_subject" value="Portfolio Contact">
+                   <input
+    type="text"
+    id="name"
+    name="Name"
+    placeholder="Your Name"
+    required>
 
-                    <input type="text" name="Name" placeholder="Your Name" required>
+<input
+    type="email"
+    id="email"
+    name="Email"
+    placeholder="Your Email"
+    required>
 
-                    <input type="email" name="Email" placeholder="Your Email" required>
+<textarea
+    id="message"
+    name="Message"
+    rows="3"
+    placeholder="Write your message..."
+    required></textarea>
+                    
 
-                    <input type="text" name="Subject" placeholder="Subject">
-
-                    <textarea
-                        name="Message"
-                        rows="6"
-                        placeholder="Write your message..."
-                        required></textarea>
+                    
 
                     <button type="submit">
                         <i class="fas fa-paper-plane"></i>
@@ -916,24 +890,6 @@
 
 </section>
 
-<!-- ==========================================
-     FOOTER
-========================================== -->
-
 <footer class="footer">
-
-    <div class="footer-content">
-
-        <p>
-            © 2026 <strong>Shivalingappa Yalagi</strong> |
-            Data Analyst Portfolio
-        </p>
-
-        <p class="footer-credit">
-            Designed & Developed by
-            <strong>Shivalingappa Yalagi</strong>
-        </p>
-
-    </div>
-
+    <p>© 2026 Shivalingappa Yalagi | Data Analyst Portfolio</p>
 </footer>
