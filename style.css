@@ -186,7 +186,7 @@ nav ul li a:hover{
 
     background-repeat:no-repeat;
     background-position:right center;
-    background-size:clamp(320px,45vw,700px);
+    background-size:clamp(420px,45vw,800px);
 }
 
 .hero-text{
