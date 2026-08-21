@@ -184,9 +184,10 @@ nav ul li a:hover{
     ),
     url("images/Profile1.jpg");
 
-    background-repeat:no-repeat;
-    background-position:right center;
-    background-size:clamp(950px,105vw,1700px);
+   min-height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
 }
 
 .hero-text{
